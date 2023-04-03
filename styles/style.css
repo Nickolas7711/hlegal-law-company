@@ -62,7 +62,6 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: end;
-  gap: 18px;
 }
 
 .navigation-top {
@@ -136,8 +135,13 @@
   content: url(../images/delimiter.svg);
 }
 
-.menu {
+#menu__toggle {
+  opacity: 0;
+}
+
+.header__menu {
   display: flex;
+  flex-direction: row;
   align-items: end;
   font-family: "Montserrat";
   font-style: normal;
@@ -145,7 +149,7 @@
   font-size: 16px;
   line-height: 20px;
 }
-.menu ul {
+.header__menu ul {
   display: flex;
   flex-direction: row;
   gap: 15px;
@@ -171,7 +175,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 105px 90px 0 60px;
-    gap: 30px;
+    gap: 15px;
   }
   .navigation {
     gap: 30px;
@@ -183,6 +187,9 @@
   }
 }
 @media (max-width: 564px) {
+  .header {
+    height: 92px;
+  }
   .navigation-top {
     width: 100%;
     justify-content: space-between;
@@ -200,7 +207,7 @@
   .social {
     display: none;
   }
-  .menu {
+  .menu__inner {
     display: none;
   }
   .header {
@@ -228,5 +235,81 @@
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 5px;
+  }
+  .menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center; /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 50px;
+    right: 15px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+  }
+  .menu__btn > span::before {
+    content: url(../images/Hamburger.svg);
+    top: -16px;
+  }
+  .menu__btn > span::after {
+    content: "";
+    top: -16px;
+  }
+  /* контейнер меню */
+  .header__menu-box {
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    bottom: 0;
+    width: 359px;
+    height: 351px;
+    padding: 80px 0;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 12px 12px 0px 0px;
+  }
+  .header__menu ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .header__menu li {
+    background: #F5F5FA;
+    border-radius: 12px;
+  }
+  /* элементы меню */
+  .menu__inner {
+    display: block;
+    padding: 7px 112px;
+    text-decoration: none;
+  }
+  .menu__inner:hover {
+    background-color: #E6E6F0;
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    content: url(../images/Hamburger.svg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    content: url(../images/Hamburger\ active.svg);
+  }
+  #menu__toggle:checked ~ .header__menu-box {
+    visibility: visible;
+    right: 8px;
+    padding: 64px 12px 12px 12px;
+  }
+}
+@media (max-width: 375px) {
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
