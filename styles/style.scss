@@ -51,6 +51,16 @@ $gradient-red-text: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
     line-height: $lh;
 }
 
+html, body{
+  height: 100%;
+}
+
+.wrapper{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Шапка сайта */
 
 .header{
@@ -68,7 +78,10 @@ $gradient-red-text: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
  
 }
 
-.logo__name{
+.logo__name a{
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
   max-width: 130px;
   
   svg{
@@ -76,14 +89,6 @@ $gradient-red-text: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   }
   
 
-  &-top{
-  display: flex;
-  flex-direction: row;
-  gap: 6px;
-}
-&-bottom{
-  max-width: 130px;
-}
 &-slash{
   max-width: 21px;
 }
@@ -158,9 +163,10 @@ $gradient-red-text: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   fill: $assent;
 }
 
+
 .delimiter span:before{
   content: url(../images/delimiter.svg);
- 
+
 }
 #menu__toggle {
   opacity: 0;
@@ -190,7 +196,7 @@ $gradient-red-text: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
 .menu__inner--red{
   a{
     color: $assent;
-    // border-bottom: 2px solid $assent;
+    border-bottom: 2px solid $assent;
   }
   a:hover{
     color: $assent;
@@ -198,6 +204,74 @@ $gradient-red-text: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   }
   
 }
+
+.main{
+  flex-grow: 1;
+}
+
+
+.footer__content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 60px;
+    text-align: center;
+    gap: 21px;
+}
+.footer__location{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.footer__feedback{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  order: 1;
+}
+
+.copyright{
+  position: absolute;
+  right: 60px;
+}
+
+.footer__address{
+    @include font-face(400, 16px, 20px);
+    color: $main;
+  }
+  .footer__one-map{
+    @include font-face(700, 12px, 15px);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $regular;
+  }
+  .footer__social{
+    svg{
+      fill: $regular;
+    }
+    svg:hover{
+      fill: $assent;
+    }
+  }
+  .footer__contact{
+    @include font-face(700, 16px, 20px);
+    color: $alt;
+  }
+  .footer__mail{
+    @include font-face(700, 16px, 20px);
+    a{
+      color: $regular;
+    }
+    a:hover{
+      color: $assent;
+    }
+  }
+  .copyright{
+    @include font-face(400, 16px, 20px);
+    color: $text;
+  }
 
 
 
@@ -228,6 +302,36 @@ $gradient-red-text: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
       left: 60px;
     }
   }
+}
+
+@media (max-width: 768px){
+  .footer__content{
+    
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    gap: 21px;
+}
+.footer__location{
+  flex-direction: row;
+  align-items: center;
+  width: 385px;
+  gap: 10px;
+}
+.footer__feedback{
+  
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+
+}
+
+.copyright{
+  position: static;
+  order: 1;
+}
+
 }
 
 @media (max-width: 564px){
@@ -268,16 +372,14 @@ $gradient-red-text: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
 
   }
 
-  .logo__name{
+  .logo__name{  
  
-  
-  &-top{
   gap: 3px;
   width: 70px;
-  height: 32px;
+  height: 54px;
   
 
-  }
+ 
   &-bottom{
   width: 70px;
   }
@@ -369,17 +471,25 @@ $gradient-red-text: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   padding: 64px 12px 12px 12px;
   
 }
-}
-
-@media (max-width: 375px){
-
-  .footer__content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 30px;
-
-  }
+.footer__content{
+  align-items: center;
+  padding: 32px;
+  text-align: center;
+  gap: 21px;
 
 }
+.footer__location{
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__feedback{
+  flex-direction: column;
+  gap: 10px;
+  
+}
+}
+
+// @media (max-width: 375px){
+
+  
+// }
