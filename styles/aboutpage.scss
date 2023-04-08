@@ -1,0 +1,185 @@
+// * {box-sizing: border-box;}
+// body {font-family: Verdana, sans-serif;}
+.slides {display: none;}
+img {vertical-align:baseline;}
+
+
+.aboutpage__content-inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 60px 0;
+    // gap: 30px;
+}
+
+.content-inner--booton{
+    gap: 60px;
+}
+
+.aboutpage__advantage-box{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.conteiner{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+
+.content-inner__text-title{
+    @include font-face(700, 2.25rem, 44px);
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+max-width: 49.06vw;
+margin-bottom: 28px;
+}
+
+.text-title--booton{
+    max-width: 18.85vw;
+
+}
+
+.content-inner__text-discription{
+    @include font-face(400, 1.188rem, 30px);
+    color: $black;
+    width: 49.06vw;
+}
+
+.text-discription--booton{
+    
+    width: 48.85vw;
+}
+
+.conteiner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 13px;
+}
+
+.box-number{
+    @include font-face(700, 2.375rem, 46px);
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.box-description{
+    @include font-face(400, 1rem, 20px);
+    color: $main;
+    max-width: 18.44vw;
+    margin-bottom: 40px;
+}
+
+.aboutpage__photo-bg{
+    background-image: url(../images/Team.jpg);
+    background-repeat: no-repeat;
+   background-size: cover;
+
+   p{ 
+    @include font-face(700, 6rem, 6.09vw);
+    text-align: center;
+    padding: 12.29vw 37.55vw;
+    letter-spacing: 3.28vw;
+    text-transform: uppercase;
+    color: $white;
+    text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+}
+}
+
+.aboutpage__slider{
+    background: $bg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutpage__slider-title{
+    @include font-face(700, 0.875rem, 17px);
+    color: $main;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 30px 0;
+}
+.aboutpage__slider-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.08vw;
+}
+
+.slider-bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+    border-radius: 0.63vw;
+    width: 19.27vw;
+    height: 5.73vw;
+
+    img{
+        height: 63%;
+        width: auto;
+    }
+}
+ 
+.box-dot{
+    background: $bg;
+    text-align: center;
+    padding: 30px 0;
+}
+.dot {
+    height: 16px;
+    width: 16px;
+    margin: 0 2px;
+    background-color: $active;
+    opacity: 0.2;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .dot:hover{
+    background-color: $active;
+    opacity: 0.6;
+  }
+
+  .active{
+    background-color: $active;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+.aboutpage-lines{
+    border:2px solid $separator;
+    max-width: 92.125vw;
+    border-radius: 2px;
+    background-color: $bg;
+    margin: auto;
+
+}
+
+

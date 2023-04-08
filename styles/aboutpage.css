@@ -1,0 +1,13 @@
+.aboutpage__content-inner {
+  display: flex;
+  flex-direction: row;
+}
+
+.conteiner {
+  display: flex;
+  flex-direction: row;
+}
+
+.content-inner__text {
+  padding: 60px 30px 60px 180px;
+}/*# sourceMappingURL=aboutpage.css.map */
