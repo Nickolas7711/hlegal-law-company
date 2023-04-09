@@ -236,12 +236,16 @@ img {
 .header-bgr {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   border-radius: 0px 0px 12px 12px;
+  width: 100%;
+  height: auto;
 }
 
 .header-img-logo {
   background-image: url(../images/Symbol.png);
   background-repeat: no-repeat;
-  background-position: 60% 0;
+  width: 100%;
+  height: auto;
+  background-position: 50% 0;
 }
 
 .header {
@@ -252,7 +256,7 @@ img {
 }
 
 .header-homepage {
-  padding: 50px 60px 725px 60px;
+  padding: 50px 60px 681px 60px;
 }
 
 .logo-name-page {
@@ -325,6 +329,11 @@ img {
 
 .langbar__item-homepage a {
   color: #FFFFFF;
+}
+.langbar__item-homepage a:hover {
+  padding: 5px 7px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
 }
 
 .langbar__item--red a {
@@ -557,6 +566,199 @@ img {
     padding: 64px 12px 12px 12px;
   }
 }
+.header__title-homepage {
+  position: absolute;
+  left: 38%;
+  top: 39%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.header__homepage-btn {
+  position: absolute;
+  left: 48%;
+  bottom: 175px;
+}
+.header__homepage-btn svg {
+  stroke: #FFFFFF;
+}
+.header__homepage-btn svg:hover {
+  stroke: #F0145A;
+}
+
+.header__content-homepage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0;
+  margin-left: 14.58vw;
+  gap: 60px;
+}
+
+.header__content-menu-homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 30px;
+}
+
+.content-menu-homepage {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+}
+.content-menu-homepage a {
+  color: #B3B3BA;
+}
+.content-menu-homepage a:hover {
+  color: #F0145A;
+}
+
+.content-menu-homepage--red a {
+  background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.delimiter-lines {
+  border-left: 4px solid rgba(255, 255, 255, 0.3);
+  height: 303px;
+}
+
+.header__content-homepage-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.header__content-homepage-subtitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #FFFFFF;
+}
+
+.header__content-homepage-description {
+  width: 861px;
+}
+.header__content-homepage-description p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.header__homepage-services {
+  margin-left: 8.33vw;
+}
+.header__homepage-services p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24A3FF;
+}
+.header__homepage-services p svg {
+  stroke: #24A3FF;
+}
+.header__homepage-services p::before {
+  content: "";
+  position: relative;
+  left: 92px;
+}
+.header__homepage-services p:hover {
+  color: #F0145A;
+}
+.header__homepage-services p:hover svg {
+  stroke: #F0145A;
+}
+
+.homepage-services-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.box-icon-services {
+  background-color: #FFFFFF;
+  border-radius: 24px;
+  padding: 14px 14px;
+  width: 92px;
+  height: 92px;
+  margin-bottom: 15px;
+}
+
+.box-title-services {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #24A3FF;
+}
+
+.box-description-services {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.block-content-box-services {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.block-content-services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: start;
+  gap: 60px;
+  padding: 60px 160px;
+}
+
+.delimiter__lines-page1 {
+  background: #CACADB;
+  border-radius: 0px 0px 12px 12px;
+  max-width: 96.92vw;
+  height: 10px;
+  margin: auto;
+}
+
+.delimiter__lines-page2 {
+  background: #e7e7f2;
+  border-radius: 0px 0px 12px 12px;
+  max-width: 94.83vw;
+  height: 10px;
+  margin: auto;
+}
+
 .footer__content {
   display: flex;
   flex-direction: column;
