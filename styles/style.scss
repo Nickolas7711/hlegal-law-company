@@ -23,6 +23,13 @@ $black: #000000;
 $delimiter-lines-page1: #CACADB;
 $delimiter-lines-page2: #e7e7f2;
 
+/* цвет заливки логотипа*/
+
+$hillel: #1C4280;
+$wannabiz: #143646;
+$dlook: #9E4DC3;
+
+
 /* Цвет активации значков и кнопок */
 
 $regular: #24A3FF;
@@ -68,6 +75,7 @@ html, body{
 }
 
 @import '../styles/aboutpage.scss';
+@import '../styles/contact.scss';
 @import '../styles/header.scss';
 @import '../styles/hamburger.scss';
 @import '../styles/homepage.scss';

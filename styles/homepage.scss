@@ -2,7 +2,7 @@
     position: absolute;
     left: 38%;
     top: 39%;
-    @include font-face (700, 38px, 46px);
+    @include font-face (700, 2.375rem, 46px);
     text-align: center;
     color: $white;
 }
@@ -37,7 +37,7 @@
     gap: 30px;   
 }
 .content-menu-homepage{
-    @include font-face (700, 38px, 46px);
+    @include font-face (700, 2.375rem, 46px);
     a{
         color: $text;
     }
@@ -67,21 +67,21 @@
     gap: 30px;
 }
 .header__content-homepage-subtitle{
-    @include font-face (700, 30px, 37px);
+    @include font-face (700, 1.875rem, 37px);
     color: $white;
 }
 .header__content-homepage-description{
     width: 861px;
     p{
-        @include font-face (400, 19px, 30px); 
+        @include font-face (400, 1.188rem, 30px); 
         color: $white;
     }
 }
 
 .header__homepage-services{
     margin-left: 8.33vw;
-    p{
-        @include font-face (700, 14px, 17px);
+    a{
+        @include font-face (700, .875rem, 17px);
         letter-spacing: 1px;
         text-transform: uppercase;
         color: $regular;
@@ -90,14 +90,14 @@
         }
     }
 
-    p::before{
+    a::before{
         content: "";
         position: relative;
-        left: 92px;
+        left: 3.5px;
 
     }
 
-    p:hover{
+    a:hover{
         color: $assent;
         svg{
             stroke: $assent;
@@ -106,7 +106,7 @@
 }
 
 .homepage-services-title{
-    @include font-face (700, 38px, 46px);
+    @include font-face (700, 2.375rem, 46px);
     background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -123,12 +123,12 @@
 }
 
 .box-title-services{
-    @include font-face (700, 22px, 27px);
+    @include font-face (700, 1.375rem, 27px);
     color: $regular;
 }
 
 .box-description-services{
-    @include font-face (400, 16px, 26px);
+    @include font-face (400, 1rem, 26px);
     color: $white;
 }
 
@@ -160,4 +160,296 @@
     max-width: 94.83vw;
     height: 10px;
     margin: auto;
+}
+
+.team-overview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 160px;
+    gap: 30px;
+}
+
+.team-overviev__content{
+    display: grid;
+    grid-template-columns: 20.83vw 1fr;
+    background: $bg;
+    border-radius: 12px;
+    gap: 30px;
+    width: 83.33vw;
+}
+
+.team-overviev__photo{
+    background-image: url(../images/Team-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%; 
+    border-radius: 12px 0px 0px 12px;
+
+    
+
+}
+
+.team-overview__box-texts{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    
+}
+
+
+.box-texts__btn{
+    a{
+        @include font-face (700, .875rem, 17px);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $regular;
+        svg{
+            stroke: $regular;
+        }
+    } 
+    a::before{
+        content: '';
+        position: relative;
+        left: 3.5px;
+        }
+}
+.box-texts__title{
+    @include font-face (700, 2.375rem, 46px);
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    max-width: 59.38vw;
+    margin-bottom: 1.56vw;
+}
+.box-texts__name{
+    @include font-face (700, 1rem, 20px);
+    color: $text;
+}
+.box-texts__job-title{
+    @include font-face (400, .875rem, 22px);
+    color: $text;
+}
+.box-logo-item{
+    display: grid;
+    grid-template-columns: repeat(4, 360px);
+    justify-content: center;
+}
+
+.box-icon-logo-hillel{
+    background: $hillel;
+    position: relative;
+    width: 360px;
+    height: 120px; 
+    
+
+    img{
+        width: 217px;
+        height: 48px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);    
+    }
+
+}
+
+.box-icon-logo-wannabiz{
+    background: $wannabiz;
+    position: relative;
+    width: 360px;
+    height: 120px; 
+    
+
+    img{
+        width: 217px;
+        height: 48px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);    
+    }
+   
+}
+
+.box-icon-logo-tapgerine{
+    background: linear-gradient(0deg, #F48B30, #F48B30), #F48B30;;
+    position: relative;
+    width: 360px;
+    height: 120px; 
+    
+
+    img{
+        width: 217px;
+        height: 48px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);    
+    }
+   
+}
+
+.box-icon-logo-3dlook{
+    background: $dlook;
+    position: relative;
+    width: 360px;
+    height: 120px; 
+    
+
+    img{
+        width: 217px;
+        height: 48px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);    
+    }
+   
+}
+
+.box-icon-logo-orangear{
+    background: #FD9339;
+    position: relative;
+    width: 360px;
+    height: 120px; 
+    
+
+    img{
+        width: 217px;
+        height: 48px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);    
+    }
+   
+}
+
+.box-icon-logo-adtelligent{
+    background: #E2E2E4;
+    position: relative;
+    width: 360px;
+    height: 120px; 
+    
+
+    img{
+        width: 217px;
+        height: 48px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);    
+    }
+   
+}
+
+.box-icon-logo-clickky{
+    background: #C71C36;
+    position: relative;
+    width: 360px;
+    height: 120px; 
+    
+
+    img{
+        width: 217px;
+        height: 48px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);    
+    }
+   
+}
+
+.box-icon-logo-ecoleasing{
+    background: #DCF3F9;
+    position: relative;
+    width: 360px;
+    height: 120px; 
+    
+
+    img{
+        width: 217px;
+        height: 48px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);    
+    }
+   
+}
+
+.box-icon-logo-ingratec{
+    background: #EAEAEA;
+    position: relative;
+    width: 360px;
+    height: 120px; 
+    
+
+    img{
+        width: 217px;
+        height: 48px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);    
+    }
+   
+}
+
+.box-icon-logo-citypar{
+    background: #282240;
+    position: relative;
+    width: 360px;
+    height: 120px; 
+    
+
+    img{
+        width: 217px;
+        height: 48px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);    
+    }
+   
+}
+
+.box-icon-logo-artprint{
+    background: #1D4568;
+    position: relative;
+    width: 360px;
+    height: 120px; 
+    
+
+    img{
+        width: 217px;
+        height: 48px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);    
+    }
+   
+}
+
+.box-icon-logo-ultimatecard{
+    background: #000000;
+    position: relative;
+    width: 360px;
+    height: 120px; 
+    
+
+    img{
+        width: 217px;
+        height: 48px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);    
+    }
+   
 }

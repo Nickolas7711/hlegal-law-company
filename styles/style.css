@@ -12,6 +12,7 @@
 
 /* Подключение шрифтов */
 /* Цвет */
+/* цвет заливки логотипа*/
 /* Цвет активации значков и кнопок */
 /* Оттенки серого фона */
 /* Градиенты */
@@ -230,6 +231,84 @@ img {
   border-radius: 2px;
   background-color: #F5F5FA;
   margin: auto;
+}
+
+.content__feedback {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 60px 0;
+  gap: 60px;
+}
+
+.feedback__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact__address {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  color: #323264;
+}
+
+.contact__phone {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  color: #46466E;
+}
+
+.contact__mail {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+}
+.contact__mail a {
+  color: #24A3FF;
+}
+
+.contact__delimiter {
+  border: 2px solid #E6E6F0;
+  width: 33.85vw;
+}
+
+.contact__social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.social__icon svg {
+  fill: #24A3FF;
+}
+.social__icon svg:hover {
+  fill: #F0145A;
+}
+
+.social__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: left;
+}
+.social__text a {
+  color: #24A3FF;
+}
+.social__text a:hover {
+  color: #F0145A;
 }
 
 /* Шапка сайта */
@@ -573,7 +652,7 @@ img {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 38px;
+  font-size: 2.375rem;
   line-height: 46px;
   text-align: center;
   color: #FFFFFF;
@@ -612,7 +691,7 @@ img {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 38px;
+  font-size: 2.375rem;
   line-height: 46px;
 }
 .content-menu-homepage a {
@@ -645,7 +724,7 @@ img {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 1.875rem;
   line-height: 37px;
   color: #FFFFFF;
 }
@@ -657,7 +736,7 @@ img {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-size: 19px;
+  font-size: 1.188rem;
   line-height: 30px;
   color: #FFFFFF;
 }
@@ -665,28 +744,28 @@ img {
 .header__homepage-services {
   margin-left: 8.33vw;
 }
-.header__homepage-services p {
+.header__homepage-services a {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 17px;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #24A3FF;
 }
-.header__homepage-services p svg {
+.header__homepage-services a svg {
   stroke: #24A3FF;
 }
-.header__homepage-services p::before {
+.header__homepage-services a::before {
   content: "";
   position: relative;
-  left: 92px;
+  left: 3.5px;
 }
-.header__homepage-services p:hover {
+.header__homepage-services a:hover {
   color: #F0145A;
 }
-.header__homepage-services p:hover svg {
+.header__homepage-services a:hover svg {
   stroke: #F0145A;
 }
 
@@ -694,7 +773,7 @@ img {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 38px;
+  font-size: 2.375rem;
   line-height: 46px;
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
@@ -715,7 +794,7 @@ img {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 1.375rem;
   line-height: 27px;
   color: #24A3FF;
 }
@@ -724,7 +803,7 @@ img {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 26px;
   color: #FFFFFF;
 }
@@ -757,6 +836,275 @@ img {
   max-width: 94.83vw;
   height: 10px;
   margin: auto;
+}
+
+.team-overview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px 160px;
+  gap: 30px;
+}
+
+.team-overviev__content {
+  display: grid;
+  grid-template-columns: 20.83vw 1fr;
+  background: #F5F5FA;
+  border-radius: 12px;
+  gap: 30px;
+  width: 83.33vw;
+}
+
+.team-overviev__photo {
+  background-image: url(../images/Team-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  border-radius: 12px 0px 0px 12px;
+}
+
+.team-overview__box-texts {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+.box-texts__btn a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24A3FF;
+}
+.box-texts__btn a svg {
+  stroke: #24A3FF;
+}
+.box-texts__btn a::before {
+  content: "";
+  position: relative;
+  left: 3.5px;
+}
+
+.box-texts__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.375rem;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  max-width: 59.38vw;
+  margin-bottom: 1.56vw;
+}
+
+.box-texts__name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 20px;
+  color: #B3B3BA;
+}
+
+.box-texts__job-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 22px;
+  color: #B3B3BA;
+}
+
+.box-logo-item {
+  display: grid;
+  grid-template-columns: repeat(4, 360px);
+  justify-content: center;
+}
+
+.box-icon-logo-hillel {
+  background: #1C4280;
+  position: relative;
+  width: 360px;
+  height: 120px;
+}
+.box-icon-logo-hillel img {
+  width: 217px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box-icon-logo-wannabiz {
+  background: #143646;
+  position: relative;
+  width: 360px;
+  height: 120px;
+}
+.box-icon-logo-wannabiz img {
+  width: 217px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box-icon-logo-tapgerine {
+  background: linear-gradient(0deg, #F48B30, #F48B30), #F48B30;
+  position: relative;
+  width: 360px;
+  height: 120px;
+}
+.box-icon-logo-tapgerine img {
+  width: 217px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box-icon-logo-3dlook {
+  background: #9E4DC3;
+  position: relative;
+  width: 360px;
+  height: 120px;
+}
+.box-icon-logo-3dlook img {
+  width: 217px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box-icon-logo-orangear {
+  background: #FD9339;
+  position: relative;
+  width: 360px;
+  height: 120px;
+}
+.box-icon-logo-orangear img {
+  width: 217px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box-icon-logo-adtelligent {
+  background: #E2E2E4;
+  position: relative;
+  width: 360px;
+  height: 120px;
+}
+.box-icon-logo-adtelligent img {
+  width: 217px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box-icon-logo-clickky {
+  background: #C71C36;
+  position: relative;
+  width: 360px;
+  height: 120px;
+}
+.box-icon-logo-clickky img {
+  width: 217px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box-icon-logo-ecoleasing {
+  background: #DCF3F9;
+  position: relative;
+  width: 360px;
+  height: 120px;
+}
+.box-icon-logo-ecoleasing img {
+  width: 217px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box-icon-logo-ingratec {
+  background: #EAEAEA;
+  position: relative;
+  width: 360px;
+  height: 120px;
+}
+.box-icon-logo-ingratec img {
+  width: 217px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box-icon-logo-citypar {
+  background: #282240;
+  position: relative;
+  width: 360px;
+  height: 120px;
+}
+.box-icon-logo-citypar img {
+  width: 217px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box-icon-logo-artprint {
+  background: #1D4568;
+  position: relative;
+  width: 360px;
+  height: 120px;
+}
+.box-icon-logo-artprint img {
+  width: 217px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box-icon-logo-ultimatecard {
+  background: #000000;
+  position: relative;
+  width: 360px;
+  height: 120px;
+}
+.box-icon-logo-ultimatecard img {
+  width: 217px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .footer__content {

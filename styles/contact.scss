@@ -1,0 +1,77 @@
+.content__feedback{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 60px 0;
+
+    gap: 60px;
+}
+
+.feedback__contact{
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.contact__address{
+    @include font-face(400, 21px, 30px);
+    color: $main;
+
+}
+
+.contact__phone{
+    @include font-face(400, 21px, 30px);
+    color: $alt;
+}
+
+.contact__mail{
+    @include font-face(400, 21px, 30px);
+    a{
+        color: $regular;
+    }
+
+}
+
+
+.contact__delimiter{
+    border: 2px solid $separator;
+    width: 33.85vw;
+}
+
+.contact__social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    
+    
+
+}
+
+.social__icon{
+    svg{
+        fill: $regular;
+        }
+
+    svg:hover{
+        fill: $assent;
+        }
+
+}
+.social__text{
+    @include font-face(700, 12px, 16px);
+    text-transform: uppercase;
+    text-align: left;
+        
+    a{
+        color: $regular;
+        
+    }
+
+    a:hover{
+        color: $assent;
+
+}
+    
+}
