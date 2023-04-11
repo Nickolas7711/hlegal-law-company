@@ -111,18 +111,26 @@
             </div>            
         </div>
         <div class="feedback__forma">
-          <div class="forma__title">We would like to help you</div>
-          <div class="forma-name">
-            <form>
+          <div class="forma__title">We would like to help you</div>          
+            <form class="forma-name">
               <label for="name"></label>
-              <input type="name" placeholder="Name" />
-            </form>
-            <div class="forma-message">
+              <input type="text" placeholder="Name" />
+            </form>            
+              <form>                
+                <textarea>Message</textarea>
+              </form>             
+              <div class="contact__request">How to answer you?</div>              
               <form>
-                <label for="message"></label>
-                <input type="text" placeholder="Message" />
-              </form>
-
+              <label for="tel"></label>
+              <input type="tel" placeholder="Phone number" />
+            </form>           
+            <form >
+              <label for="email"></label>
+              <input type="email" placeholder="Email" />
+            </form>          
+            <div class="btn__message">
+              <input type="submit" value="Send message">
+            </div>
         </div>
       </div>
     </main>
