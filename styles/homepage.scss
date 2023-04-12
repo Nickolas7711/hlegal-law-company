@@ -25,16 +25,17 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 60px 0;
+    margin: 3.13vw 0;
     margin-left: 14.58vw;
-    gap: 60px;
+    gap: 3.13vw;
 
 }
 .header__content-menu-homepage{
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     align-items: flex-end;
-    gap: 30px;   
+    gap: 1.56vw;   
 }
 .content-menu-homepage{
     @include font-face (700, 2.375rem, 46px);
@@ -71,7 +72,7 @@
     color: $white;
 }
 .header__content-homepage-description{
-    width: 861px;
+    width: 44.84vw;
     p{
         @include font-face (400, 1.188rem, 30px); 
         color: $white;
@@ -232,18 +233,20 @@
     @include font-face (400, .875rem, 22px);
     color: $text;
 }
+
 .box-logo-item{
     display: grid;
-    grid-template-columns: repeat(4, 360px);
+    grid-template-columns: repeat(4, 22.40vw);
+    grid-template-rows: repeat(3, 120px);
+    width: auto;
     justify-content: center;
+    border-radius: 12px;
+    
 }
 
 .box-icon-logo-hillel{
     background: $hillel;
     position: relative;
-    width: 360px;
-    height: 120px; 
-    
 
     img{
         width: 217px;
@@ -251,7 +254,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);    
+        transform: translate(-50%, -50%); 
     }
 
 }
@@ -259,27 +262,21 @@
 .box-icon-logo-wannabiz{
     background: $wannabiz;
     position: relative;
-    width: 360px;
-    height: 120px; 
     
-
     img{
         width: 199px;
         height: 32px;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);    
+        transform: translate(-50%, -50%); 
     }
-   
+
 }
 
 .box-icon-logo-tapgerine{
     background: linear-gradient(0deg, #F48B30, #F48B30), #F48B30;;
     position: relative;
-    width: 360px;
-    height: 120px; 
-    
 
     img{
         width: 179px;
@@ -287,35 +284,29 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);    
+        transform: translate(-50%, -50%); 
     }
-   
+
 }
 
 .box-icon-logo-3dlook{
     background: $dlook;
     position: relative;
-    width: 360px;
-    height: 120px; 
-    
 
     img{
-        width: 188px;
-        height: 48px;
+        width: 180px;
+        height: 42px;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);    
+        transform: translate(-50%, -50%); 
     }
-   
+
 }
 
 .box-icon-logo-orangear{
     background: #FD9339;
     position: relative;
-    width: 360px;
-    height: 120px; 
-    
 
     img{
         width: 174px;
@@ -323,17 +314,14 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);    
+        transform: translate(-50%, -50%); 
     }
-   
+
 }
 
 .box-icon-logo-adtelligent{
     background: #E2E2E4;
     position: relative;
-    width: 360px;
-    height: 120px; 
-    
 
     img{
         width: 224px;
@@ -341,17 +329,14 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);    
+        transform: translate(-50%, -50%); 
     }
-   
+
 }
 
 .box-icon-logo-clickky{
     background: #C71C36;
     position: relative;
-    width: 360px;
-    height: 120px; 
-    
 
     img{
         width: 138px;
@@ -359,17 +344,14 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);    
+        transform: translate(-50%, -50%); 
     }
-   
+
 }
 
 .box-icon-logo-ecoleasing{
     background: #DCF3F9;
     position: relative;
-    width: 360px;
-    height: 120px; 
-    
 
     img{
         width: 146px;
@@ -377,17 +359,14 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);    
+        transform: translate(-50%, -50%); 
     }
-   
+
 }
 
 .box-icon-logo-ingratec{
     background: #EAEAEA;
     position: relative;
-    width: 360px;
-    height: 120px; 
-    
 
     img{
         width: 182px;
@@ -395,17 +374,14 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);    
+        transform: translate(-50%, -50%); 
     }
-   
+
 }
 
 .box-icon-logo-citypar{
     background: #282240;
     position: relative;
-    width: 360px;
-    height: 120px; 
-    
 
     img{
         width: 181px;
@@ -413,17 +389,14 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);    
+        transform: translate(-50%, -50%); 
     }
-   
+
 }
 
 .box-icon-logo-artprint{
     background: #1D4568;
     position: relative;
-    width: 360px;
-    height: 120px; 
-    
 
     img{
         width: 189px;
@@ -433,15 +406,12 @@
         left: 50%;
         transform: translate(-50%, -50%);    
     }
-   
+
 }
 
 .box-icon-logo-ultimatecard{
     background: #000000;
     position: relative;
-    width: 360px;
-    height: 120px; 
-    
 
     img{
         width: 152px;
@@ -449,7 +419,149 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);    
+        transform: translate(-50%, -50%); 
     }
+
+}
+.conteiner-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    gap: 30px;
+}
+.logo-title{
+    @include font-face (700, .875rem, 17px);
+    color: $main;
+    text-transform: uppercase;
+}
+.conteiner__content-publication{
+    background: $bg;
+    padding: 1.56vw 8.33vw;
+}
+.content-publication__btn{
+    margin-bottom: 10px;
+    a{
+        @include font-face (700, .875rem, 17px);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $regular;
+        svg{
+            stroke: $regular;
+        }
+    }
+
+    a::before{
+        content: "";
+        position: relative;
+        left: 3.5px;
+
+    }
+
+    a:hover{
+        color: $assent;
+        svg{
+            stroke: $assent;
+        }
+    }
+}
+
+.content-publication__title{
+    @include font-face (700, 2.375rem, 46px);
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 30px;
+}
+
+.content__publication-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    gap: 1.56vw;
+}
+.publication-box__item{
    
+    width: 25.77vw;
+    height: auto;
+    background: $white;
+    border-radius: 8px;
+    
+    
+}
+.item-publication__text{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 15px;
+}
+
+.item-publication__imag img{
+    display: block;
+    width: 100%;
+    height: 11.42vw;
+    border-radius: 8px 8px 0px 0px;
+}
+.item-publication__title{
+    display: inline;
+    @include font-face (700, 1rem, 20px);
+    color: $regular;
+}
+.item-publication__data{
+    @include font-face (700, .75rem, 15px);
+    color: $text;
+    text-transform: uppercase;
+}
+.item-publication__delimiter{
+    border: 2px solid $separator;
+    width: 18.49vw;
+    height: auto;
+    margin: auto
+}
+.item-publication__description{
+    @include font-face (400, .875rem, 22px);
+    color: $black;
+}
+
+.homepage-end__delimiter{
+    background-color: $bg;
+    border: 2px solid $separator;
+    width: 92.33vw;
+    margin: auto;
+}
+
+
+@media (max-width: 1440px){
+    .header__content-homepage{
+        margin-left: 9.38vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px){
+    .header__content-homepage{
+        margin-left: 3.13vw;
+    }
+
+    .header__content-homepage-subtitle{
+        width: 405px;
+
+    }
+}
+
+
+
+
+@media (max-width: 884px){
+
 }

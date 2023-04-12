@@ -1,0 +1,125 @@
+.publicationspage__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    margin-top: 60px;
+    
+}
+
+.content__box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.publicationspage__images img{
+    display: block;
+    width: 80.83vw;
+    height: 30.04vw;
+    border-radius: 12px;
+    
+}
+.publicationspage__images-title{
+    @include font-face (700, 1.875rem, 37px);
+    color: $main;
+    max-width: 80.83vw;
+}
+
+.publications__images-data{
+    @include font-face (700, .75rem, 17px);
+    color: $text;
+}
+
+.publications__delimiter{
+    border: 2px solid $separator;
+    width: 80.83vw;
+    margin: auto;
+}
+
+.publications__descriptions{
+    @include font-face (400, 1rem, 26px);
+    color: $black;
+    max-width: 80.83vw;
+}
+.publications__title{
+    @include font-face (700, 2.375rem, 46px);
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    max-width: 80.83vw;
+}
+
+.publications__subtitle{
+    @include font-face (700, 1.375rem, 27px);
+    color: $alt;
+}
+.publications__subtitle--color-main{
+    @include font-face (700, 1.375rem, 27px);
+    color: $main;
+}
+
+.publications__list-item{
+    @include font-face (400, 1.125rem, 26px);
+    ol {
+        
+        counter-reset: my-counter;
+        padding-left: 20px;
+      }
+      
+      ol li::before {
+        @include font-face (700, 1.125rem, 26px);
+        content: counter(my-counter) ".";
+        counter-increment: my-counter;
+        color: red;
+        margin-right: 0.5em;
+      }
+}
+
+.publications__box-illustration{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.illustration img{
+    display: block;
+    width: 33.33vw;
+    height: 20.73vw;
+}
+
+.illustration__title{
+    @include font-face (400, .875rem, 22px);
+    color: $text;
+}
+
+.publicationspage__social{
+    margin-bottom: 60px;
+}
+.social-inner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    gap: 19px;
+
+    img{
+        padding: 7px 10px;
+    }
+
+}
+
+.social-item--regular{
+    background: $bg;
+    border: 2px solid $bg;
+    border-radius: 12px;
+        
+}
+
+.social-item:hover{
+    background: $bg;
+    border: 2px solid $bg;
+    border-radius: 12px;
+        
+}

@@ -26,8 +26,11 @@
     
   }
 
-  .header-homepage{
-    padding: 50px 60px 681px 60px;
+  .header__header-homepage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 60px 663px 60px;
   }
   
   .logo-name-page{
@@ -205,11 +208,18 @@ svg{
     }
     
   }
-  @media (max-width: 932px){
+  @media (max-width: 945px){
     .header{
       flex-direction: column;
       align-items: flex-start;
       padding: 105px 90px 0 60px;
+      gap: 15px;
+    }
+
+    .header__header-homepage{
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 105px 90px 538px 60px;
       gap: 15px;
     }
   
@@ -224,7 +234,7 @@ svg{
       }
     }
   }
-  @media (max-width: 564px){
+  @media (max-width: 580px){
     .header{
       height: 92px;
     }
@@ -254,6 +264,11 @@ svg{
     .header{
       padding: 41px 90px 0 18px;
       gap: 0;
+    }
+
+    .header__header-homepage{
+      padding: 40px 90px 630px 30px;
+      
     }
   
     .logo-name-page{
