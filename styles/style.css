@@ -336,7 +336,7 @@ img {
   background-clip: text;
 }
 
-.feedbeck__forma input {
+input {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -556,6 +556,19 @@ input[type=submit] {
   border-radius: 12px;
 }
 
+.servicespage-services-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.375rem;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding: 60px 160px 0 160px;
+}
+
 /* Шапка сайта */
 .header-bgr {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
@@ -579,14 +592,13 @@ input[type=submit] {
   padding: 50px 60px 0px 60px;
 }
 
-.header__header-homepage {
+.logo-name-page {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 50px 60px 604px 60px;
+  gap: 4px;
 }
 
-.logo-name-page {
+.logo-name-page__servicespage {
   display: flex;
   flex-direction: row;
   gap: 4px;
@@ -605,7 +617,38 @@ input[type=submit] {
   max-width: 21px;
 }
 
+.logo__name-servicespage a {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  max-width: 130px;
+}
+.logo__name-servicespage a svg {
+  fill: #FFFFFF;
+}
+.logo__name-servicespage a-slash {
+  max-width: 21px;
+}
+
+.header__header-homepage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px 60px 663px 60px;
+}
+
+.header__header-servicespage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px 60px 0 60px;
+}
+
 .logo__name-homepage a svg {
+  fill: #FFFFFF;
+}
+
+.logo__name-servicespage a svg {
   fill: #FFFFFF;
 }
 
@@ -618,10 +661,19 @@ input[type=submit] {
   color: #323264;
 }
 
+.name-page__servicespage {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+
 .navigation {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: end;
 }
 
@@ -663,6 +715,15 @@ input[type=submit] {
   border-radius: 8px;
 }
 
+.langbar__item-servicespage a {
+  color: #FFFFFF;
+}
+.langbar__item-servicespage a:hover {
+  padding: 5px 7px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
 .langbar__item--red a {
   background: #F0145A;
   border-radius: 8px;
@@ -686,6 +747,10 @@ input[type=submit] {
   color: #FFFFFF;
 }
 
+.address-servicespage {
+  color: #FFFFFF;
+}
+
 .contact {
   font-family: "Montserrat";
   font-style: normal;
@@ -701,6 +766,10 @@ input[type=submit] {
   color: #FFFFFF;
 }
 
+.contact-servicespage a {
+  color: #FFFFFF;
+}
+
 .social svg {
   fill: #B3B3BA;
 }
@@ -710,6 +779,10 @@ input[type=submit] {
 }
 
 .social-homepage svg {
+  fill: #FFFFFF;
+}
+
+.social-servicespage svg {
   fill: #FFFFFF;
 }
 
@@ -760,7 +833,7 @@ input[type=submit] {
   border-bottom: 2px solid #F0145A;
 }
 
-@media (max-width: 945px) {
+@media (max-width: 995px) {
   .header {
     flex-direction: column;
     align-items: flex-start;
@@ -768,6 +841,12 @@ input[type=submit] {
     gap: 15px;
   }
   .header__header-homepage {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 105px 90px 538px 60px;
+    gap: 15px;
+  }
+  .header__header-servicespage {
     flex-direction: column;
     align-items: flex-start;
     padding: 105px 90px 538px 60px;
@@ -813,7 +892,14 @@ input[type=submit] {
   .header__header-homepage {
     padding: 40px 90px 630px 30px;
   }
+  .header__header-servicespage {
+    padding: 41px 90px 0 18px;
+    gap: 0;
+  }
   .logo-name-page {
+    align-items: center;
+  }
+  .logo-name-page__servicespage {
     align-items: center;
   }
   .logo__name {
@@ -824,7 +910,23 @@ input[type=submit] {
   .logo__name-slash {
     width: 11px;
   }
+  .logo__name-servicespage {
+    gap: 3px;
+    width: 70px;
+    height: 54px;
+  }
+  .logo__name-servicespage-slash {
+    width: 11px;
+  }
   .name-page {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 5px;
+  }
+  .name-page__servicespage {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
@@ -851,6 +953,7 @@ input[type=submit] {
   .menu__btn > span::after {
     display: block;
     position: absolute;
+    left: 0;
   }
   .menu__btn > span::before {
     content: url(../images/Hamburger.svg);
