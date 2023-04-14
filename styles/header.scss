@@ -10,8 +10,7 @@
 .header-img-logo{
   background-image: url(../images/Symbol.png);
   background-repeat: no-repeat;
-  width: 100%;
-  height: auto;
+  background-size: 47% 70%;
   background-position: 50% 0;
 
 }
@@ -75,7 +74,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 50px 60px 690px 60px;
+  padding: 50px 60px 804px 60px;
 }
 
 .header__header-servicespage{
@@ -243,6 +242,7 @@
 .menu__inner{
   a{
     color: $regular;
+    white-space: nowrap;
   }
   a:hover{
     border-bottom: 2px solid $regular;
@@ -259,6 +259,16 @@
 
 }
 
+.menu__inner-homepage{
+  li a{
+    color: #643E72;
+  }
+  li a:hover{
+    border-bottom: 2px solid $white;
+  }
+
+}
+
 
 .menu__inner--red{
   a{
@@ -270,6 +280,16 @@
     border-bottom: 2px solid $assent;
   }
 }
+
+@media (max-width: 1440px){
+  .header-img-logo{
+    background-size: 669px 881px;
+    background-position: 50% 0;
+  
+  }
+}
+
+
 @media (max-width: 995px){
   .header{
     flex-direction: column;
@@ -282,7 +302,7 @@
   .header__header-homepage{
     flex-direction: column;
     align-items: flex-start;
-    padding: 105px 90px 600px 60px;
+    padding: 105px 90px 730px 60px;
     gap: 15px;
   }
   .header__header-servicespage{
@@ -303,9 +323,20 @@
     }
   }
 }
+
+
+
+
 @media (max-width: 580px){
   .header{
     height: 92px;
+  }
+
+  .header__header-servicespage {
+    height: 81px;
+}
+  .navigation{
+    width: 300px;
   }
   
   .navigation-top{
@@ -340,7 +371,7 @@
   }
 
   .header__header-homepage{
-    padding: 40px 90px 630px 30px;
+    padding: 40px 90px 464px 30px;
       
   }
   .header__header-servicespage{
@@ -385,3 +416,19 @@
   } 
   
 }
+
+@media (max-width: 580px){
+  .header-img-logo {
+    background-size: 524px 600px;
+    background-position: 50% 0;
+ }
+ .header__title-homepage{
+  top: 28%;
+ }
+ .header__homepage-btn{
+  position: absolute;
+  left: 45%;
+  top: 56%;
+ }
+
+ }

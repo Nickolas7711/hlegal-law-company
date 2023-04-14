@@ -1,7 +1,7 @@
 .header__title-homepage{
     position: absolute;
-    left: 38%;
-    top: 39%;
+    width: 100%;
+    top: 44%;
     @include font-face (700, 2.375rem, 46px);
     text-align: center;
     color: $white;
@@ -10,7 +10,7 @@
 .header__homepage-btn{
     position: absolute;
     left: 48%;
-    bottom: 18%;
+    bottom: 10%;
     svg{
         stroke: $white;
     }
@@ -120,8 +120,14 @@
 }
 
 .box-title-services{
+    a{
     @include font-face (700, 1.375rem, 27px);
     color: $regular;
+    }
+
+    a:hover{
+        color: $assent;
+    }
 }
 
 .box-description-services{
@@ -174,6 +180,7 @@
     border-radius: 12px;
     gap: 30px;
     width: 83.33vw;
+    
 }
 
 .team-overviev__photo{
@@ -448,7 +455,7 @@
 
 
 
-@media (max-width: 1024px){
+@media (max-width: 1094px){
     .header__content-homepage{
         margin-left: 3.13vw;
     }
@@ -514,45 +521,50 @@
     }
     
 
-.delimiter-lines {
+    .delimiter-lines {
     border-radius: 2px;
     border: 2px solid rgba(255, 255, 255, 0.3);
-    width: 80%;
+    width: 75%;
     height: auto;
+    margin-left: 95px;
     
-}
-.header__content-homepage-subtitle {
-    width: 678px;
-}
-.header__content-homepage-description {
+    }
+    .header__content-homepage-subtitle {
+    width: 78.84vw;
+    }
+    .header__content-homepage-description {
     width: 74.84vw;
-}
-.header__homepage-services {
+    }
+    .header__homepage-services {
     margin-left: 10.33vw;
-}
-.header__content-homepage{
+    }
+    .header__content-homepage{
     display: block;
-}
+    }
 
-.content-menu-homepage--long{
+    .content-menu-homepage--long{
     min-width: 415px;
-}
+    }
 
-.header__content-menu-homepage> .list-elements{
+    .header__content-menu-homepage> .list-elements{
     display: flex;
     overflow: auto;
     
-}
-.header__content-menu-homepage> .list-elements::-webkit-scrollbar{
+    }
+    .header__content-menu-homepage> .list-elements::-webkit-scrollbar{
     display: none;
-}
-.header__content-menu-homepage> .list-elements> li{
+    }
+    .header__content-menu-homepage> .list-elements> li{
     padding: 20px;
+    }
+
     .header__content-homepage-text{
-       padding: 15px;
+        padding: 60px 95px;
     }
 }
-}
+
+
+
 @media (max-width: 810px){
     .publication-box__item {
         width: 37.77vw;
@@ -566,4 +578,45 @@
     }
     
 }
+@media (max-width: 767px){
+    .box-logo-item {
+        grid-template-columns: repeat(2, minmax(250px, 400px));
+    }
+}
+@media (max-width: 604px){
+    .publication-box__item {
+        width: 81.77vw;
+    }
+    .item-publication__imag img {
+       height: 35.42vw;
+        
+    }
+}
+
+@media (max-width: 566px){
+    .header__content-homepage-text {
+        padding: 60px 9.78vw;
+    }
+    .delimiter-lines {
+       margin-left: 9.78vw;
+    }
+
+    .block-content-services {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .box-logo-item {
+        grid-template-columns: repeat(1, minmax(250px, 400px));
+    }
+}
+
+@media (max-width: 376px){
+.block-content-services {
+    padding: 60px 26px;
+}
+.box-texts__title{
+    max-width: 71.38vw;
+}
+
+}
+
 

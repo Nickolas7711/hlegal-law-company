@@ -70,7 +70,7 @@
     /* контейнер меню */
   .header__menu-box {
     display: block;
-    position: relative;
+    position: absolute;
     visibility: hidden;
     bottom: 0;
     width: 359px;
@@ -81,6 +81,21 @@
     border-radius: 12px 12px 0px 0px;
   
   }
+  .header__menu-box--homepage {
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    bottom: 0;
+    width: 359px;
+    height: 351px;
+    padding: 80px 0;
+    text-align: center;
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    border-radius: 12px 12px 0px 0px;
+  
+  }
+
+
   .header__menu{
     ul{
     flex-direction: column;

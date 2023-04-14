@@ -101,11 +101,19 @@ input{
     height: 56px;
     padding: 15px 15px;
     background: $white;   
-    outline:none; 
+    outline: none; 
     border-radius: 8px;
     border: 1px solid $white;
     color: $text;
     
+}
+
+input:focus{
+    border: 1px solid $active;
+}
+
+input:invalid{
+    border: 1px solid #FF0000;
 }
 
 
@@ -121,6 +129,11 @@ textarea {
     resize: none;
     color: $text;
 }
+
+textarea:focus{
+    border: 1px solid $active;
+}
+
 .contact__request{
     @include font-face(700, .875rem, 17px);
     color: $text;
@@ -142,11 +155,16 @@ input[type=submit]{
     float: right;
 }
 
-// @media (max-width: 1024px){
-//     .content__feedback{
-//         justify-content: space-around;
-//     }
-// }
+input[type=submit]:hover{
+    background: #0085FF;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5)
+}
+
+input[type=submit]:active{
+    background: #006CCF;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+}
+
 
 @media (max-width: 995px){
 

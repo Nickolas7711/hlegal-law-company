@@ -1,8 +1,9 @@
 .publicationspage__content{
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: flex-start;  
     margin-top: 60px;
+    padding: 0 10%;
     
 }
 
@@ -15,7 +16,7 @@
 .publicationspage__images img{
     display: block;
     width: 80.83vw;
-    height: 30.04vw;
+    height: 500px;
     border-radius: 12px;
     
 }
@@ -85,8 +86,8 @@
 
 .illustration img{
     display: block;
-    width: 33.33vw;
-    height: 20.73vw;
+    width: 59.33vw;
+    height: 43.73vw;
 }
 
 .illustration__title{
@@ -125,4 +126,9 @@
 }
 
 
-
+@media (max-width: 680px){
+    .publicationspage__images img{
+        height: 300px;
+               
+    }
+}
