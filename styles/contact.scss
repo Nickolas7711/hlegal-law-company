@@ -1,10 +1,10 @@
 .content__feedback{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 60px 0;
 
-    gap: 60px;
+    // gap: 30px;
 }
 
 .feedback__contact{
@@ -15,18 +15,18 @@
 
 }
 .contact__address{
-    @include font-face(400, 21px, 30px);
+    @include font-face(400, 1.313rem, 30px);
     color: $main;
 
 }
 
 .contact__phone{
-    @include font-face(400, 21px, 30px);
+    @include font-face(400, 1.313rem, 30px);
     color: $alt;
 }
 
 .contact__mail{
-    @include font-face(400, 21px, 30px);
+    @include font-face(400, 1.313rem, 30px);
     a{
         color: $regular;
     }
@@ -60,7 +60,7 @@
 
 }
 .social__text{
-    @include font-face(700, 12px, 16px);
+    @include font-face(700, 0.75rem, 16px);
     text-transform: uppercase;
     text-align: left;
         
@@ -81,14 +81,14 @@
     flex-direction: column;
     justify-content: center;
     text-align:start;
-    width: 650px;
-    height: 603px;
+    min-width: 30.73vw;
+    height: auto;
     border-radius: 12px;
     padding: 30px;
     gap: 15px;
 }
 .forma__title{
-    @include font-face(700, 30px, 37px);
+    @include font-face(700, 1.875rem, 37px);
     background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -96,7 +96,7 @@
 }
 
 input{
-        @include font-face(400, 16px, 26px);
+        @include font-face(400, 1rem, 26px);
     width: 100%;
     height: 56px;
     padding: 15px 15px;
@@ -110,7 +110,7 @@ input{
 
 
 textarea {
-    @include font-face(400, 16px, 26px);
+    @include font-face(400, 1rem, 26px);
     width: 100%;
     height: 130px;
     padding: 15px 15px;
@@ -122,23 +122,64 @@ textarea {
     color: $text;
 }
 .contact__request{
-    @include font-face(700, 14px, 17px);
+    @include font-face(700, .875rem, 17px);
     color: $text;
     text-transform: uppercase;
 
 }
 .btn__message{
-    @include font-face(700, 16px, 20px);
+    @include font-face(700, 1rem, 20px);
 
 }
 
 input[type=submit]{
     background-color: $regular;
     color: $white;
-    padding: 18px 233px;
     box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
     border: none;
     border-radius: 12px;
     cursor: pointer;
     float: right;
+}
+
+// @media (max-width: 1024px){
+//     .content__feedback{
+//         justify-content: space-around;
+//     }
+// }
+
+@media (max-width: 995px){
+
+    .content__feedback{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 60px;
+        max-width: 995px;
+        gap: 60px;
+    }
+
+    .contact__delimiter{
+        border: 2px solid $separator;
+        width: 81.57vw;
+    }
+
+    .feedback__forma{
+        background: $bg;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align:start;
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        padding: 30px;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 578px){
+    .content__feedback{
+        padding: 30px;
+    }
 }

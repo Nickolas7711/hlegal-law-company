@@ -10,7 +10,7 @@
 .header__homepage-btn{
     position: absolute;
     left: 48%;
-    bottom: 175px;
+    bottom: 18%;
     svg{
         stroke: $white;
     }
@@ -30,12 +30,8 @@
     gap: 3.13vw;
 
 }
-.header__content-menu-homepage{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: flex-end;
-    gap: 1.56vw;   
+.header__content-menu-homepage>.list-elements{
+    text-align: right;
 }
 .content-menu-homepage{
     @include font-face (700, 2.375rem, 46px);
@@ -232,194 +228,88 @@
     color: $text;
 }
 
+
 .box-logo-item{
     display: grid;
-    grid-template-columns: repeat(4, 22.40vw);
-    grid-template-rows: repeat(3, 120px);
-    width: auto;
-    justify-content: center;
-    border-radius: 12px;
-    
+    grid-template-columns: repeat(4, minmax(256px, 430px));
 }
 
 .box-icon-logo-hillel{
     background: $hillel;
-    position: relative;
-
-    img{
-        width: 217px;
-        height: 48px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); 
-    }
-
+    border-radius: 12px 0px 0px 0px;
 }
 
 .box-icon-logo-wannabiz{
     background: $wannabiz;
-    position: relative;
-    
-    img{
-        width: 199px;
-        height: 32px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); 
-    }
 
 }
 
 .box-icon-logo-tapgerine{
     background: linear-gradient(0deg, #F48B30, #F48B30), #F48B30;;
-    position: relative;
-
-    img{
-        width: 179px;
-        height: 44px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); 
-    }
 
 }
 
 .box-icon-logo-3dlook{
     background: $dlook;
-    position: relative;
-
-    img{
-        width: 180px;
-        height: 42px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); 
-    }
+    border-radius: 0px 12px 0px 0px;
 
 }
 
 .box-icon-logo-orangear{
     background: #FD9339;
-    position: relative;
-
-    img{
-        width: 174px;
-        height: 44px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); 
-    }
 
 }
 
 .box-icon-logo-adtelligent{
     background: #E2E2E4;
-    position: relative;
-
-    img{
-        width: 224px;
-        height: 48px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); 
-    }
 
 }
 
 .box-icon-logo-clickky{
     background: #C71C36;
-    position: relative;
-
-    img{
-        width: 138px;
-        height: 61px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); 
-    }
-
+ 
 }
 
 .box-icon-logo-ecoleasing{
     background: #DCF3F9;
-    position: relative;
-
-    img{
-        width: 146px;
-        height: 76px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); 
-    }
 
 }
 
 .box-icon-logo-ingratec{
     background: #EAEAEA;
-    position: relative;
-
-    img{
-        width: 182px;
-        height: 60px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); 
-    }
+    border-radius: 0px 0px 0px 12px;
 
 }
 
 .box-icon-logo-citypar{
     background: #282240;
-    position: relative;
-
-    img{
-        width: 181px;
-        height: 38px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); 
-    }
-
+  
 }
 
 .box-icon-logo-artprint{
     background: #1D4568;
-    position: relative;
-
-    img{
-        width: 189px;
-        height: 46px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);    
-    }
 
 }
 
 .box-icon-logo-ultimatecard{
     background: #000000;
-    position: relative;
+    border-radius: 0px 0px 12px 0px;
 
-    img{
-        width: 152px;
-        height: 95px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); 
-    }
+} 
 
+.brands__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.brands__item img{
+    display: block;
+    max-width: 100%;
+    width: 224px;
+    height: 150px;
+    object-fit: contain;
 }
 .conteiner-logo{
     display: flex;
@@ -477,9 +367,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    flex-wrap: nowrap;
-    flex-wrap: wrap;
-    gap: 1.56vw;
+    gap: 30px;
 }
 .publication-box__item{
    
@@ -515,7 +403,7 @@
 }
 .item-publication__delimiter{
     border: 2px solid $separator;
-    width: 18.49vw;
+    width: 100%;
     height: auto;
     margin: auto
 }
@@ -530,15 +418,29 @@
     width: 92.33vw;
     margin: auto;
 }
+@media (max-width: 1719px){
+    .box-icon-logo-hillel{        
+        border-radius: 0px 0px 0px 0px;
+    }
+    .box-icon-logo-3dlook{
+        border-radius: 0px 0px 0px 0px;
+    }
+    .box-icon-logo-ingratec{
+        border-radius: 0px 0px 0px 0px;
+    }
+    .box-icon-logo-ultimatecard{
+        border-radius: 0px 0px 0px 0px;
+    
+    } 
 
+}
 
 @media (max-width: 1440px){
     .header__content-homepage{
         margin-left: 9.38vw;
     }
+    
 }
-
-
 
 
 
@@ -557,9 +459,111 @@
     }
 }
 
+@media (max-width: 1014px){
+    .box-logo-item{
+    grid-template-columns: repeat(3, minmax(250px, 400px));
+    }
+    .team-overview{
+        margin: 60px 0;
+    }
+    .team-overviev__content {
+        grid-template-columns: none;
+        grid-template-rows: 73.83vw 1fr;
+        border-radius: 12px;
+    }
+    .team-overviev__photo {
+        border-radius: 12px 12px 0px 0px;
+    }
+    .team-overview__box-texts {
+        padding: 0px 20px;
+    }
+    .block-content-services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .block-content-services{
+        padding: 60px 91px;
+    }
+    .content__publication-box{
+        flex-wrap: wrap;
+    }
+    .publication-box__item {
+        width: 38.77vw;
+    }
+    .item-publication__imag img {
+        height: 23.42vw;
+        
+    }
 
-
-
-@media (max-width: 884px){
+    .publication-box__item--block {
+        width: 81.77vw;
+    }
+    .item-publication__imag--block img {
+       height: 35.42vw;
+        
+    }
 
 }
+
+
+
+
+@media (max-width: 886px){
+    .header__content-homepage{
+        flex-direction: column;
+        margin-left: 0;
+    }
+    
+
+.delimiter-lines {
+    border-radius: 2px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    width: 80%;
+    height: auto;
+    
+}
+.header__content-homepage-subtitle {
+    width: 678px;
+}
+.header__content-homepage-description {
+    width: 74.84vw;
+}
+.header__homepage-services {
+    margin-left: 10.33vw;
+}
+.header__content-homepage{
+    display: block;
+}
+
+.content-menu-homepage--long{
+    min-width: 415px;
+}
+
+.header__content-menu-homepage> .list-elements{
+    display: flex;
+    overflow: auto;
+    
+}
+.header__content-menu-homepage> .list-elements::-webkit-scrollbar{
+    display: none;
+}
+.header__content-menu-homepage> .list-elements> li{
+    padding: 20px;
+    .header__content-homepage-text{
+       padding: 15px;
+    }
+}
+}
+@media (max-width: 810px){
+    .publication-box__item {
+        width: 37.77vw;
+    }
+    .publication-box__item--block {
+        width: 78.77vw;
+    }
+    .item-publication__imag--block img {
+       height: 35.42vw;
+        
+    }
+    
+}
+

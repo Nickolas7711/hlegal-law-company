@@ -6,3 +6,22 @@
     background-clip: text;
     padding: 60px 160px 0 160px;
 }
+
+.conteiner-logo-servicespage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.logo-title__servicespage{
+    @include font-face (700, 0.875rem, 17px);
+    color: $main;
+    text-transform: uppercase;
+    padding: 60px 0 30px 0;
+}
+
+@media (max-width: 1014px){
+    .servicespage-services-title{
+        padding: 60px 160px 0 84px;
+    }
+}
