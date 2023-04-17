@@ -30,6 +30,14 @@
     gap: 4px;
   
 }
+.header__title-homepage{
+  position: absolute;
+  width: 100%;
+  top: 44%;
+  @include font-face (700, 2.375rem, 46px);
+  text-align: center;
+  color: $white;
+}
 
 .logo-name-page__servicespage{
     display: flex;
@@ -302,7 +310,7 @@
   .header__header-homepage{
     flex-direction: column;
     align-items: flex-start;
-    padding: 105px 90px 730px 60px;
+    padding: 105px 90px 685px 60px;
     gap: 15px;
   }
   .header__header-servicespage{
@@ -334,9 +342,9 @@
 
   .header__header-servicespage {
     height: 81px;
-}
+  }
   .navigation{
-    width: 300px;
+    width: 51.72vw;
   }
   
   .navigation-top{
@@ -371,7 +379,7 @@
   }
 
   .header__header-homepage{
-    padding: 40px 90px 464px 30px;
+    padding: 40px 90px 190px 30px;
       
   }
   .header__header-servicespage{
@@ -404,31 +412,29 @@
       width: 11px;
       }
     }
-.name-page{
+  .name-page{
   @include font-face(400, 20px, 24px);
   margin-bottom: 5px;
   } 
   
 
-.name-page__servicespage{
+  .name-page__servicespage{
   @include font-face(400, 20px, 24px);
   margin-bottom: 5px;
   } 
   
-}
 
-@media (max-width: 580px){
   .header-img-logo {
     background-size: 524px 600px;
     background-position: 50% 0;
- }
- .header__title-homepage{
+  }
+  .header__title-homepage{
   top: 28%;
- }
- .header__homepage-btn{
+  }
+  .header__homepage-btn{
   position: absolute;
   left: 45%;
   top: 56%;
- }
+  }
 
- }
+}

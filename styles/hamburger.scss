@@ -70,28 +70,28 @@
     /* контейнер меню */
   .header__menu-box {
     display: block;
-    position: absolute;
+    position: relative;
     visibility: hidden;
     bottom: 0;
-    width: 359px;
+    width: auto;
     height: 351px;
-    padding: 80px 0;
+    padding: 13.86vw 0;
     text-align: center;
     background-color: $white;
-    border-radius: 12px 12px 0px 0px;
+    border-radius: 12px 12px 12px 12px ;
   
   }
   .header__menu-box--homepage {
     display: block;
-    position: absolute;
+    position: relative;
     visibility: hidden;
-    bottom: 0;
-    width: 359px;
+    bottom: auto;
+    width: auto;
     height: 351px;
-    padding: 80px 0;
+    padding: 13.86vw 0;
     text-align: center;
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
-    border-radius: 12px 12px 0px 0px;
+    border-radius: 12px 12px 12px 12px ;
   
   }
 
@@ -110,7 +110,7 @@
   /* элементы меню */
   .menu__inner {
     display: block;
-    padding: 7px 112px;
+    padding: 7px 19.41vw;
     text-decoration: none;
    
   }
@@ -126,7 +126,7 @@
   }
   #menu__toggle:checked ~ .header__menu-box {
     visibility: visible;
-    right: 8px;
+    left: 66px;
     padding: 64px 12px 12px 12px;
     
   }

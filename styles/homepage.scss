@@ -1,11 +1,4 @@
-.header__title-homepage{
-    position: absolute;
-    width: 100%;
-    top: 44%;
-    @include font-face (700, 2.375rem, 46px);
-    text-align: center;
-    color: $white;
-}
+
 
 .header__homepage-btn{
     position: absolute;
@@ -25,7 +18,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 3.13vw 0;
+    // margin: 3.13vw 0;
     margin-left: 14.58vw;
     gap: 3.13vw;
 

@@ -58,7 +58,12 @@ $separator: #E6E6F0;
 
 html, body{
   height: 100%;
-}
+ }
+
+//  html {
+//   overflow-x: hidden;
+//   margin-right: calc(-1 * (100vw - 100%));
+// }
 
 .wrapper{
   min-height: 100%;
@@ -68,12 +73,12 @@ html, body{
 .main{
   flex-grow: 1;
 }
+@import '../styles/header.scss';
+@import '../styles/hamburger.scss';
 @import '../styles/homepage.scss';
 @import '../styles/aboutpage.scss';
 @import '../styles/contact.scss';
 @import '../styles/publications.scss';
 @import '../styles/servicespage.scss';
-@import '../styles/header.scss';
-@import '../styles/hamburger.scss';
 @import '../styles/footer.scss';
 
